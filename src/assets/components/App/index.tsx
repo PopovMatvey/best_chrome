@@ -4,6 +4,7 @@ import { Header } from '../Header';
 import { Footer } from '../Footer';
 import { MainContent } from '../MainContent';
 
+// Приложение
 function App() {
 
   return (

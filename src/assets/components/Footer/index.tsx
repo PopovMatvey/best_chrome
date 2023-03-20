@@ -7,6 +7,7 @@ import whatsup from "./images/whatsup.svg";
 import phone from "./images/phone.svg";
 import tracker from "./images/tracker.svg";
 
+// Подвал
 export function Footer() {
 
     return (
