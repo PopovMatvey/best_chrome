@@ -52,17 +52,3 @@ h1{
     height: auto;
   }
 }
-
-@media screen and (max-width:600px) {
-  .App-logo {
-    width: 100px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width:440px) {
-  .App-logo {
-    width: 60px;
-    height: auto;
-  }
-}
