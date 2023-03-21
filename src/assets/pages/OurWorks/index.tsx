@@ -8,7 +8,7 @@ export function OurWorks() {
     return (
         <>
             <div className="out-works-container">
-                <div className="out-works-container_beginner-screen">
+                <div className="out-works-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>Наши работы</h1>
                 </div>

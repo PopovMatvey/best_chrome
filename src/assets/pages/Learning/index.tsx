@@ -8,7 +8,7 @@ export function Learning() {
     return (
         <>
             <div className="learning-container">
-                <div className="learning-container_beginner-screen">
+                <div className="learning-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>Обучение</h1>
                 </div>

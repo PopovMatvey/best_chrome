@@ -8,6 +8,7 @@ import { Services } from "../../pages/Services";
 import { Shop } from "../../pages/Shop";
 import { Technologies } from "../../pages/Technologies";
 import { OurWorks } from "../../pages/OurWorks";
+import { CrashTests } from "../../pages/CrashTests";
 
 // Основной контент
 export function MainContent() {
@@ -22,6 +23,7 @@ export function MainContent() {
                     <Route path={"/learning"} element={<Learning/>}></Route>
                     <Route path={"/technologies"} element={<Technologies/>}></Route>
                     <Route path={"/ourWorks"} element={<OurWorks/>}></Route>
+                    <Route path={"/crashTests"} element={<CrashTests/>}></Route>
                     <Route path={"/contacts"} element={<Contacts/>}></Route>
                 </Routes>
             </div>

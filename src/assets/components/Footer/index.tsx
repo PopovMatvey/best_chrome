@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../../images/logo.png';
 import "./css/style.css";
+import logo from '../../images/logo.png';
 import mail from "./images/mail.svg";
 import youtube from "./images/youtube.svg";
 import whatsup from "./images/whatsup.svg";
@@ -9,6 +9,14 @@ import tracker from "./images/tracker.svg";
 
 // Подвал
 export function Footer() {
+    const hrefOnMail = "#df";           // Ссылка на почту
+    const hrefOnYoutybe = "#rwe";       // Ссылка на YouTube
+    const hrefOnWhatsUp = "#btnd";      // Ссылка на Whats up
+    const hrefOnMap = "#opkop";         // Ссылка на карту
+    const arrayPhones = [               // Номера телефонов
+        "8-915-627-38-29",
+        "8-915-627-38-31",
+    ]
 
     return (
         <footer>
@@ -17,9 +25,9 @@ export function Footer() {
                     <img src={logo} className="App-logo" alt="logo" />
                 </div>
                 <div className="footer-content_contacts">
-                    <a href="#m"><img src={mail} alt="Иконка почты" /></a>
-                    <a href="#y"><img src={youtube} alt="Иконка почты" /></a>
-                    <a href="#w"><img src={whatsup} alt="Иконка почты" /></a>
+                    <a href={hrefOnMail}><img src={mail} alt="Иконка почты" /></a>
+                    <a href={hrefOnYoutybe}><img src={youtube} alt="Иконка почты" /></a>
+                    <a href={hrefOnWhatsUp}><img src={whatsup} alt="Иконка почты" /></a>
                 </div>
                 <div className="footer-content_communication">
                     <div className="footer-content_communication__row">
@@ -27,7 +35,7 @@ export function Footer() {
                             <img src={tracker} alt="Иконка метки" />
                         </div>
                         <div className="footer-content_communication__contacts">
-                            <a href="#ds">
+                            <a href={hrefOnMap}>
                                 г. Тверь, ул. Новая 10
                             </a>
                         </div>
@@ -37,12 +45,13 @@ export function Footer() {
                             <img src={phone} alt="Иконка телефона" />
                         </div>
                         <div className="footer-content_communication__contacts">
-                            <a href="tel:+7-915-627-38-29">
-                                +7-915-627-38-29
-                            </a>
-                            <a href="tel:+7-915-627-38-29">
-                                +7-915-627-38-29
-                            </a>
+                            {
+                                arrayPhones.map((element, index) => (
+                                    <a href={`tel:${element}`} key={index++}>
+                                        {element}
+                                    </a>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

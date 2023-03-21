@@ -8,7 +8,7 @@ export function Technologies() {
     return (
         <>
             <div className="technologies-container">
-                <div className="technologies-container_beginner-screen">
+                <div className="technologies-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>Технологии</h1>
                 </div>

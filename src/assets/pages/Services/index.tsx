@@ -8,7 +8,7 @@ export function Services() {
     return (
         <>
             <div className="services-container">
-                <div className="services-container_beginner-screen">
+                <div className="services-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>Услуги</h1>
                 </div>

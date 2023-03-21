@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./css/style.css";
 
+// Боковое меню
 export function SlideMenu() {
 
     return (
@@ -13,6 +14,7 @@ export function SlideMenu() {
                 <Link to={"/learning"}>Обучение</Link>
                 <Link to={"/technologies"}>Технологии</Link>
                 <Link to={"/ourWorks"}>Наши работы</Link>
+                <Link to={"/crashTests"}>Краш-тетсы</Link>
                 <Link to={"/contacts"}>Контакты</Link>
             </div>
         </>

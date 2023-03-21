@@ -8,7 +8,7 @@ export function Shop() {
     return (
         <>
             <div className="shop-container">
-                <div className="shop-container_beginner-screen">
+                <div className="shop-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>Магазин</h1>
                 </div>

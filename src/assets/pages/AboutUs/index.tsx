@@ -8,7 +8,7 @@ export function AboutUs() {
     return (
         <>
             <div className="about-us-container">
-                <div className="about-us-container_beginner-screen">
+                <div className="about-us-container_beginner-screen beginner-screen">
                     <SlideMenu />
                     <h1>О нас</h1>
                 </div>

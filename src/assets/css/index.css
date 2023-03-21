@@ -20,6 +20,20 @@ h1{
   margin: 30px 60px;
 }
 
+@media screen and (max-width:560px) {
+  h1{
+    font-size: 30px;
+    margin: 30px 30px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  h1{
+    font-size:20px;
+    margin: 30px 10px;
+  }
+}
+
 .App-logo {
   width: 300px;
   height: auto;
@@ -51,4 +65,8 @@ h1{
     width: 150px;
     height: auto;
   }
+}
+
+.beginner-screen{
+  display: flex;
 }
