@@ -10,7 +10,10 @@ export function Shop() {
             <div className="shop-container">
                 <div className="shop-container_beginner-screen beginner-screen">
                     <SlideMenu />
-                    <h1>Магазин</h1>
+                    <div className="shop-container_beginner-screen_content">
+                        <h1>Магазин</h1>
+                        <span>Магазин временно недоступен</span>
+                    </div>
                 </div>
             </div>
         </>
