@@ -1,8 +1,35 @@
 /* Услуги */
-/* .services-container {
-    height: 50vh;
-} */
-
 /* .services-container_beginner-screen{
     display: flex;
+    flex-direction: column;
 } */
+
+.services-container_beginner-screen_assortiment {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-container_beginner-screen_assortiment_item {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    transition: 1s all;
+}
+
+.services-container_beginner-screen_assortiment_item:hover{
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+}
+
+.services-container_beginner-screen_assortiment_item img {
+    width: 100%;
+}
+
+.services-container_beginner-screen_assortiment_item h3{
+    text-align: center;
+    margin: 5px;
+}
