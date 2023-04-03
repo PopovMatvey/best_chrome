@@ -1,8 +1,68 @@
 /* Контакты */
-/* .contacts-container {
-    height: 80vh;
-} */
+.contacts-container_beginner-screen_content_contacts {
+    padding: 0px 60px;
+}
 
-/* .contacts-container_beginner-screen{
+.contacts-container_beginner-screen_content_contacts h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacts-container_beginner-screen_content_contact_row_time-work {
     display: flex;
-} */
+    flex-direction: column;
+}
+
+.contacts-container_beginner-screen_content_contact_row_time-work span {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contacts-container_beginner-screen_content_contact_row {
+    display: flex;
+}
+
+.contacts-container_beginner-screen_content_contact_row_mail {
+    margin-left: 50px;
+}
+
+.contacts-container_beginner-screen_content_contact_row_mail_block {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-container_beginner-screen_content_contact_row_mail_block img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+.contacts-container_beginner-screen_content_contact_row_phone_phones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts-container_beginner-screen_content_contact_row_phone_phones img {
+    height: 40px;
+}
+
+.contacts-container_beginner-screen_content_contact_row_phone_phones_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.contacts-container_beginner-screen_content_contact_row_phone_phones_item span {
+    display: block;
+    margin: 10px 0px;
+}
+
+.contacts-container_beginner-screen_content_contact_row_map img {
+    height: 300px;
+    width: 80%;
+    padding: 20px;
+}
