@@ -1,17 +1,28 @@
 /* Контакты */
-.contacts-container_beginner-screen_content_contacts {
-    padding: 0px 60px;
+.contacts-container_beginner-screen_content{
+    width: 60%;
 }
 
-.contacts-container_beginner-screen_content_contacts h6 {
+.contacts-container_beginner-screen_content_contact_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+/* Общая информация */
+.contacts-container_beginner-screen_content_contact_row h6 {
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 10px;
 }
 
 .contacts-container_beginner-screen_content_contact_row_time-work {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 10px;
 }
 
 .contacts-container_beginner-screen_content_contact_row_time-work span {
@@ -19,28 +30,34 @@
     padding-bottom: 10px;
 }
 
-.contacts-container_beginner-screen_content_contact_row {
-    display: flex;
-}
-
 .contacts-container_beginner-screen_content_contact_row_mail {
-    margin-left: 50px;
+    width: 60%;
 }
 
 .contacts-container_beginner-screen_content_contact_row_mail_block {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 0px;
 }
 
 .contacts-container_beginner-screen_content_contact_row_mail_block img {
     height: 30px;
-    margin-right: 20px;
 }
 
+.contacts-container_beginner-screen_content_contact_row_mail_block a{
+    display: block;
+    padding: 10px 10px;
+}
+
+/* Телефоны */
 .contacts-container_beginner-screen_content_contact_row_phone_phones {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .contacts-container_beginner-screen_content_contact_row_phone_phones img {
@@ -51,6 +68,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    min-width: 150px;
     margin: 20px;
     padding: 5px;
     text-align: center;
@@ -61,8 +80,18 @@
     margin: 10px 0px;
 }
 
+/* Карта */
+.contacts-container_beginner-screen_content_contact_row_map span{
+    display: block;
+    text-align: center;
+}
+
+.contacts-container_beginner-screen_content_contact_row_map_image{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
 .contacts-container_beginner-screen_content_contact_row_map img {
-    height: 300px;
-    width: 80%;
-    padding: 20px;
+    width: 100%;
 }

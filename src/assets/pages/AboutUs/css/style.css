@@ -1,12 +1,12 @@
 /* О нас */
 .about-us-container_beginner-screen_content {
     width: 70%;
-    padding: 20px;
 }
 
 .about-us-container_beginner-screen_content__row {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 10px 0px;
 }
 
@@ -14,18 +14,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0px 10px;
 }
 
 .about-us-container_beginner-screen_content__row_image-block img {
-    width: 100%;
+    width: 150px;
     height: auto;
+    margin: 10px 0px;
 }
 
 .about-us-container_beginner-screen_content__row span {
     display: block;
+    width: 75%;
     text-align: justify;
-    padding-left: 10px
+    padding-left: 10px;
+    margin: 10px 0px;
 }
 
 .about-us-container_serteficates h1 {
@@ -47,5 +51,5 @@
 }
 
 .about-us-container_serteficates_images img {
-    width: 30%;
+    width: 200px;
 }

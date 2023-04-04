@@ -55,7 +55,9 @@ export function Contacts() {
                                 <div className="contacts-container_beginner-screen_content_contact_row_map">
                                     <h6>Наш адрес</h6>
                                     <span>170022 обл. Тверская, г. Тверь, ул. Новая, д. 10</span>
-                                    <img src={map} alt="Карта" />
+                                    <div className="contacts-container_beginner-screen_content_contact_row_map_image">
+                                        <img src={map} alt="Карта" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
