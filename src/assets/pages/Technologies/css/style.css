@@ -1,8 +1,9 @@
 /* Технологии */
-/* .technologies-container{
-    height: 79vh;
-} */
+.technologies-container_beginner-screen_container{
+    width: 80%;
+}
 
-/* .technologies-container_beginner-screen{
-    display: flex;
-} */
+.technologies-container_beginner-screen_container span{
+    display: block;
+    text-align: center;
+}

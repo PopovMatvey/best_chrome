@@ -8,7 +8,10 @@ export function CrashTests() {
         <>
             <div className="crash-tests-container_beginner-screen beginner-screen">
                 <SlideMenu />
-                <h1>Краш-тесты</h1>
+                <div className="crash-tests-container_beginner-screen_container">
+                    <h1>Краш-тесты</h1>
+                    <span>Скоро здесь будут краш-тесты...</span>
+                </div>
             </div>
         </>
     )

@@ -32,7 +32,7 @@ export function Contacts() {
                             </div>
                             <div className="contacts-container_beginner-screen_content_contact_row">
                                 <div className="contacts-container_beginner-screen_content_contact_row_phone">
-                                    <h6>наши телефоны</h6>
+                                    <h6>Наши телефоны</h6>
                                     <div className="contacts-container_beginner-screen_content_contact_row_phone_phones">
                                         <img src={phone} alt="иконка телефона" />
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">

@@ -36,7 +36,7 @@ export function AboutUs() {
                     </div>
                 </div>
                 <div className="about-us-container_serteficates">
-                    <h1>Наши сертификаты</h1>
+                    <h3>Наши сертификаты</h3>
                     <span>
                         Лишь акционеры крупнейших компаний,
                         инициированные исключительно синтетически,
@@ -47,6 +47,10 @@ export function AboutUs() {
                         <img src={sertFirst} alt="" />
                         <img src={sertFirst} alt="" />
                     </div>
+                </div>
+                <div className="about-us-container_our-partners">
+                    <h3>Наши партнеры:</h3>
+                    <span>Здесь будут наши партнёры...</span>
                 </div>
             </div>
         </>

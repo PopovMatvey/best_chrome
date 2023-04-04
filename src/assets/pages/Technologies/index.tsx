@@ -10,7 +10,10 @@ export function Technologies() {
             <div className="technologies-container">
                 <div className="technologies-container_beginner-screen beginner-screen">
                     <SlideMenu />
-                    <h1>Технологии</h1>
+                    <div className="technologies-container_beginner-screen_container">
+                        <h1>Технологии</h1>
+                        <span>Здесь будут статьи по технология хромирования...</span>
+                    </div>
                 </div>
             </div>
         </>

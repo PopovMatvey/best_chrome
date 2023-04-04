@@ -1,4 +1,9 @@
 /* Краш-тесты */
-/* .crash-tests-container_beginner-screen{
-    display: flex;
-} */
+.crash-tests-container_beginner-screen_container{
+    width: 80%;
+}
+
+.crash-tests-container_beginner-screen_container span{
+    display: block;
+    text-align: center;
+}
