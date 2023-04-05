@@ -1,9 +1,11 @@
 import React from "react";
 import { SlideMenu } from "../../components/SlideMenu";
+import { ImageSlider } from "../../components/ImageSlider";
 import "./css/style.css";
 import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
 import sertFirst from "./images/sert1.svg";
+import { arrayImagePartners } from "../../data/arrayIImagePartners";
 
 // О нас
 export function AboutUs() {
@@ -50,7 +52,9 @@ export function AboutUs() {
                 </div>
                 <div className="about-us-container_our-partners">
                     <h3>Наши партнеры:</h3>
-                    <span>Здесь будут наши партнёры...</span>
+                    <div className="about-us-container_our-partners_contaiiner">
+                        <ImageSlider items={arrayImagePartners}/>
+                    </div>
                 </div>
             </div>
         </>

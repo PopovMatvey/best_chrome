@@ -4,6 +4,8 @@ import "./css/style.css";
 import sertificate from "./images/sertificates.svg";
 import time from "./images/time.svg";
 import hends from "./images/hends.svg";
+import { ImageSlider } from "../../components/ImageSlider";
+import { arrayStudents } from "../../data/arrayImageStudents";
 
 // Обучение
 export function Learning() {
@@ -60,7 +62,9 @@ export function Learning() {
                 </div>
                 <div className="learning-container_students">
                     <h3>Наши ученики:</h3>
-                    <span>Скоро здесь будут наши ученики...</span>
+                    <div className="learning-container_students_contaiiner">
+                        <ImageSlider items={arrayStudents} />
+                    </div>
                 </div>
             </div>
         </>

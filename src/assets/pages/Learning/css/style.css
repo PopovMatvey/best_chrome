@@ -76,3 +76,9 @@
     display: block;
     text-align: center;
 }
+
+.learning-container_students_contaiiner{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

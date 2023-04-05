@@ -28,7 +28,7 @@
 }
 
 .out-works-container_beginner-screen_portfolio h3{
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -37,4 +37,10 @@
     display: block;
     text-align: center;
     padding: 10px;
+}
+
+.out-works-container_beginner-screen_portfolio_contaiiner{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }

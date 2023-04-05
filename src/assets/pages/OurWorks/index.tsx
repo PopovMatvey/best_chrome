@@ -1,6 +1,8 @@
 import React from "react";
 import { SlideMenu } from "../../components/SlideMenu";
 import "./css/style.css";
+import { ImageSlider } from "../../components/ImageSlider";
+import { arrayImagePortfolio } from "../../data/arrayImagePortfolio";
 
 // Наши работы
 export function OurWorks() {
@@ -33,7 +35,9 @@ export function OurWorks() {
                 </div>
                 <div className="out-works-container_beginner-screen_portfolio">
                     <h3>Портфолио</h3>
-                    <span>Скоро здесь будет портфолио...</span>
+                    <div className="out-works-container_beginner-screen_portfolio_contaiiner">
+                        <ImageSlider items={arrayImagePortfolio} />
+                    </div>
                 </div>
             </div>
         </>
