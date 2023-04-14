@@ -12,9 +12,7 @@ export function SlideMenu() {
                 <Link to={"/servises"}>Услуги</Link>
                 <Link to={"/shop"}>Магазин</Link>
                 <Link to={"/learning"}>Обучение</Link>
-                <Link to={"/technologies"}>Технологии</Link>
                 <Link to={"/ourWorks"}>Наши работы</Link>
-                <Link to={"/crashTests"}>Краш-тетсы</Link>
                 <Link to={"/contacts"}>Контакты</Link>
             </div>
         </>
