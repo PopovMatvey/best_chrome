@@ -1,0 +1,10 @@
+/* Магазин */
+.shop-container_beginner-screen_content{
+    width: 70%;
+}
+
+.shop-container_beginner-screen_content span{
+    display:  block;
+    text-align: center;
+    font-size: 20px;
+}

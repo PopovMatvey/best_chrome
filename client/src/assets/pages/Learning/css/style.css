@@ -1,0 +1,84 @@
+/* Обучение */
+.learning-container_beginner-screen_container {
+    width: 80%;
+}
+
+.learning-container_beginner-screen_text {
+    width: 80%;
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+.learning-container_beginner-screen_text span::before {
+    content: "\a0\a0";
+}
+
+/* Преимущества обучения */
+.learning-container_beginner-screen_benifits {
+    width: 80%;
+    padding: 20px;
+}
+
+.learning-container_beginner-screen_benifits h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.learning-container_beginner-screen_benifits_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.learning-container_beginner-screen_benifits_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.learning-container_beginner-screen_benifits_item_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+.learning-container_beginner-screen_benifits_item_image img {
+    width: 100%;
+}
+
+.learning-container_beginner-screen_benifits_item h6 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Наши ученики */
+.learning-container_students {
+    padding: 15px;
+}
+
+.learning-container_students h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px;
+}
+
+.learning-container_students span{
+    display: block;
+    text-align: center;
+}
+
+.learning-container_students_contaiiner{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

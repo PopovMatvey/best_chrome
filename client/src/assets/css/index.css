@@ -1,0 +1,72 @@
+/* Основные стили */
+body {
+  min-width: 300px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe_WP_light", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin: 30px 60px;
+}
+
+@media screen and (max-width:560px) {
+  h1{
+    font-size: 30px;
+    margin: 30px 30px;
+  }
+}
+
+@media screen and (max-width:410px) {
+  h1{
+    font-size:20px;
+    margin: 30px 10px;
+  }
+}
+
+.App-logo {
+  width: 300px;
+  height: auto;
+}
+
+@media screen and (max-width:1700px) {
+  .App-logo {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:1700px) {
+  .App-logo {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .App-logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .App-logo {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.beginner-screen{
+  display: flex;
+}
