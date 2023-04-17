@@ -38,6 +38,13 @@
     }
 }
 
+/* Видео о нас */
+.abuot-us-container_video h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+}
 
 /* Сертефикаты */
 .about-us-container_serteficates h3 {

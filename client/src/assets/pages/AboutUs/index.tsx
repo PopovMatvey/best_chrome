@@ -6,6 +6,7 @@ import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
 import sertFirst from "./images/sert1.svg";
 import { arrayImagePartners } from "../../data/arrayIImagePartners";
+import { VideoPlayer } from "../../components/VideoPlayer";
 
 // О нас
 export function AboutUs() {
@@ -36,6 +37,10 @@ export function AboutUs() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="abuot-us-container_video">
+                    <h3>Видео о нас</h3>
+                    <VideoPlayer pathVideo={"./video/Darci_On_My_Own_Lyrics.mp4"}/>
                 </div>
                 <div className="about-us-container_serteficates">
                     <h3>Наши сертификаты</h3>
