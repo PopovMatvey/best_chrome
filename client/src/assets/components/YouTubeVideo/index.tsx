@@ -5,6 +5,8 @@ import YouTube from "react-youtube";
 export function YouTubeVideo({ videoId }: any) {
     // Настройки видео youtube
     const options = {
+        height:'auto',
+        width: '280',
         playerVars: {
             autoplay: 0,
         },
