@@ -39,10 +39,17 @@
 }
 
 /* Видео о нас */
-.abuot-us-container_video h3{
+.abuot-us-container_video h3 {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
+    padding: 20px;
+}
+
+.abuot-us-container_video_component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
