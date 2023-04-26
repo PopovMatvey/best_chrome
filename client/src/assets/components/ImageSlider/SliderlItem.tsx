@@ -1,5 +1,6 @@
 import React from "react";
 
+// Изображение слайдера (пункт)
 export const CarouselItem = ({ item, width }: any) => {
   return (
     <div className="carousel-item" style={{ width: width }}>

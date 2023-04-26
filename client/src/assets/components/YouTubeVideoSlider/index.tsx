@@ -1,12 +1,12 @@
 import React from "react";
 import "./css/style.css";
 import { useActiveIndexState } from "./hook/useActiveIndexState";
-import { CarouselItem as SliderlItem } from "./SliderlItem";
+import { YouTubeVideoItem } from "./YouTubeVideoItem";
 import arrorBack from "./images/arrow-back.png";
 import arrorNext from "./images/arrow-next.png";
 
-// Слайдер изображений
-export const ImageSlider = ({ items }: any) => {
+// YouTube видео-слайдер
+export const YouTudeVideoSlider = ({ items }: any) => {
   const { activeIndex, setActiveIndex } = useActiveIndexState();
 
   // Обновить индекс
@@ -30,7 +30,7 @@ export const ImageSlider = ({ items }: any) => {
         }}
       >
         {items.map((item: any, i: any) => {
-          return <SliderlItem key={i++} item={item} width={"100%"} />;
+          return <YouTubeVideoItem key={i++} item={item} width={"100%"} />;
         })}
       </div>
       <div className="carousel-buttons">

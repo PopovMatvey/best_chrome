@@ -2,6 +2,7 @@ import React from "react";
 import "./css/style.css";
 import YouTube from "react-youtube";
 
+// Видео YouTube
 export function YouTubeVideo({ videoId }: any) {
     // Настройки видео youtube
     const options = {

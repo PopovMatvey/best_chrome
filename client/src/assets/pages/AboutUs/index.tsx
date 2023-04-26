@@ -1,12 +1,12 @@
 import React from "react";
-import { SlideMenu } from "../../components/SlideMenu";
-import { ImageSlider } from "../../components/ImageSlider";
 import "./css/style.css";
 import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
 import sertFirst from "./images/sert1.svg";
-import { arrayImagePartners } from "../../data/arrayIImagePartners";
+import { SlideMenu } from "../../components/SlideMenu";
+import { ImageSlider } from "../../components/ImageSlider";
 import { YouTubeVideo } from "../../components/YouTubeVideo";
+import { arrayImagePartners } from "../../data/arrayIImagePartners";
 
 // О нас
 export function AboutUs() {

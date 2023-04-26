@@ -1,8 +1,10 @@
 import React from "react";
-import { SlideMenu } from "../../components/SlideMenu";
 import "./css/style.css";
+import { SlideMenu } from "../../components/SlideMenu";
 import { ImageSlider } from "../../components/ImageSlider";
 import { arrayImagePortfolio } from "../../data/arrayImagePortfolio";
+import { YouTudeVideoSlider } from "../../components/YouTubeVideoSlider";
+import { arrayYouTubeVideos } from "../../data/arrauYouTubeVidoSlider";
 
 // Наши работы
 export function OurWorks() {
@@ -37,6 +39,9 @@ export function OurWorks() {
                     <h3>Портфолио</h3>
                     <div className="out-works-container_beginner-screen_portfolio_contaiiner">
                         <ImageSlider items={arrayImagePortfolio} />
+                    </div>
+                    <div className="out-works-container_beginner-screen_portfolio_contaiiner_videos">
+                        <YouTudeVideoSlider items={arrayYouTubeVideos} />
                     </div>
                 </div>
             </div>
