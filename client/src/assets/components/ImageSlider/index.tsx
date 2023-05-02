@@ -5,7 +5,7 @@ import { CarouselItem as SliderlItem } from "./SliderlItem";
 import arrorBack from "./images/arrow-back.png";
 import arrorNext from "./images/arrow-next.png";
 
-
+// Слайдер изображений
 export const ImageSlider = ({ items }: any) => {
   const { activeIndex, setActiveIndex } = useActiveIndexState();
 

@@ -1,10 +1,11 @@
 import React from "react";
-import { SlideMenu } from "../../components/SlideMenu";
-import { ImageSlider } from "../../components/ImageSlider";
 import "./css/style.css";
 import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
 import sertFirst from "./images/sert1.svg";
+import { SlideMenu } from "../../components/SlideMenu";
+import { ImageSlider } from "../../components/ImageSlider";
+import { YouTubeVideo } from "../../components/YouTubeVideo";
 import { arrayImagePartners } from "../../data/arrayIImagePartners";
 
 // О нас
@@ -37,6 +38,12 @@ export function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <div className="abuot-us-container_video">
+                    <h3>Видео о нас</h3>
+                    <div className="abuot-us-container_video_component">
+                        <YouTubeVideo videoId="QqgBzPfBkj0"/>
+                    </div>
+                </div>
                 <div className="about-us-container_serteficates">
                     <h3>Наши сертификаты</h3>
                     <span>
@@ -53,7 +60,7 @@ export function AboutUs() {
                 <div className="about-us-container_our-partners">
                     <h3>Наши партнеры:</h3>
                     <div className="about-us-container_our-partners_contaiiner">
-                        <ImageSlider items={arrayImagePartners}/>
+                        <ImageSlider items={arrayImagePartners} />
                     </div>
                 </div>
             </div>

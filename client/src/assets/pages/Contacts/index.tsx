@@ -3,7 +3,6 @@ import { SlideMenu } from "../../components/SlideMenu";
 import "./css/style.css";
 import phone from './images/phone.svg';
 import mail from "./images/mail.svg";
-import map from "./images/map.svg";
 
 // Контакты
 export function Contacts() {
@@ -56,8 +55,7 @@ export function Contacts() {
                                     <h6>Наш адрес</h6>
                                     <span>170022 обл. Тверская, г. Тверь, ул. Новая, д. 10</span>
                                     <div className="contacts-container_beginner-screen_content_contact_row_map_image">
-                                        {/* <img src={map} alt="Карта" /> */}
-                                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
+                                        <iframe title="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
                                     </div>
                                 </div>
                             </div>

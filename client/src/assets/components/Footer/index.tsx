@@ -9,11 +9,12 @@ import tracker from "./images/tracker.svg";
 
 // Подвал
 export function Footer() {
-    const hrefOnMail = "#df";           // Ссылка на почту
-    const hrefOnYoutybe = "#rwe";       // Ссылка на YouTube
-    const hrefOnWhatsUp = "#btnd";      // Ссылка на Whats up
-    const hrefOnMap = "#opkop";         // Ссылка на карту
-    const arrayPhones = [               // Номера телефонов
+    const hrefOnMail = "mailto:bestchromshop@gmail.com";                                    // Ссылка на почту bestchromshop@gmail.com 
+    const hrefOnYoutybe = "https://www.youtube.com/channel/UCiUKKuWHYX4jQWrI543D9gwe";      // Ссылка на YouTube
+    const hrefOnWhatsUp = "#btnd";                                                          // Ссылка на Whats up
+    const hrefOnMap = `https://yandex.ru/map-widget/v1/?um=constructor%3A36a8
+    ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor`;   // Ссылка на карту
+    const arrayPhones = [                                                                   // Номера телефонов
         "8-915-627-38-29",
         "8-915-627-38-31",
     ]
