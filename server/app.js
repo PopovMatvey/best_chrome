@@ -1,24 +1,77 @@
 /*Libs*/
-const express = require('express'); // api requests lib
-const path = require('path');       // for init static directory
-const { v4 } = require('uuid');     // generate id
-const app = express();              // app iniy
-app.use(express.json());            // use json for requests
+const cors = require('cors')                                // allow api requests/response
+const fs = require('fs');                                   // for work with file/dirrectory
+const express = require('express');                         // api requests lib
+const path = require('path');                               // for init static directory
+const { v4 } = require('uuid');                             // generate id
+const app = express();                                      // app iniy
+app.use(express.json());                                    // use json for requests
+app.use(cors());
 
 /*Varibles*/
-const PORT_APP = 2000;              // app port
-const urlRequest = '/api/contacts'; // url request api
-let CONTACTS = [];                  // got array
+const PORT_APP = 2003;                      // app port
+const urlRequest = '/api/contacts';         // url request api
+const arrayPartnersSlider = getFiles('./static/images/Slider/Parnters/');
+const arrayPortfolioSlider = getFiles('./static/images/Slider/Portfolio/');
+const arrayStudentsSlider = getFiles('./static/images/Slider/Students/');
+const arrayYouTubeVideos = [
+    "QqgBzPfBkj0",
+    "QqgBzPfBkj1",
+    "QqgBzPfBkj0",
+    "QqgBzPfBkj0",
+];
+
+
+/*Methods*/
+// get all files in determ directory
+function getFiles(dir, files_) {
+    files_ = files_ || [];
+    var files = fs.readdirSync(dir);
+
+    for (var i in files) {
+        var name = dir + '/' + files[i];
+
+        if (fs.statSync(name).isDirectory()) {
+            getFiles(name, files_);
+        } else {
+            files_.push(name);
+        }
+    }
+
+    return deletePartString(files_);
+};
+
+function deletePartString(array) {
+    let returnedArray = [];
+
+    for (let i = 0; i < array.length; i++) {
+        returnedArray.push(array[i].replace("./static", ''))
+    }
+
+    return returnedArray;
+}
 
 /*Requests*/
 //GET
 app.get(`${urlRequest}`, (req, res) => {
-    setTimeout(() => {
-        res.status(200).json(CONTACTS);
-
-    }, 1000
-    )
+    res.status(200).json(CONTACTS);
 });
+
+app.get('/api/slider/image/partners', (req, res) => {
+    res.status(200).json(arrayPartnersSlider);
+});
+
+app.get('/api/slider/image/protfolio', (req, res) => {
+    res.status(200).json(arrayPortfolioSlider);
+});
+
+app.get('/api/slider/image/students', (req, res) => {
+    res.status(200).json(arrayStudentsSlider);
+});
+
+app.get('/api/slider/video/portfolio', (req, res) => {
+    res.status(200).json(arrayYouTubeVideos);
+})
 
 //POST "CREATE"
 app.post(`${urlRequest}`, (req, res) => {
@@ -45,6 +98,7 @@ app.put(`${urlRequest}/:id`, (req, res) => {
 /*Directory*/
 // init statics
 app.use(express.static(path.resolve(__dirname, '../client/build')));
+// app.use(express.static(path.resolve(__dirname, '.static')));
 
 // lisening all get requests
 app.get('*', (req, res) => {
