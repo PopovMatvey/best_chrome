@@ -6,7 +6,13 @@ import mail from "./images/mail.svg";
 
 // Контакты
 export function Contacts() {
-
+    const mailContact = "bestchromshop@gmail.com";
+    const menagerPhone = '+7 (915) 627-38-29';
+    const technologPhone = '+7 (915) 627-38-29';
+    const directorPhone = '+7 (915) 627-38-29';
+    const addressOrganization = '170022 обл. Тверская, г. Тверь, ул. Новая, д. 10';
+    const hrefOnMapAddress = `https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor`;
+    
     return (
         <>
             <div className="contacts-container">
@@ -25,7 +31,7 @@ export function Contacts() {
                                     <h6>Наша электронная почта</h6>
                                     <div className="contacts-container_beginner-screen_content_contact_row_mail_block">
                                         <img src={mail} alt="иконка почты" />
-                                        <a href="Bestchromeshop@gmail.com">bestchromeshop@gmail.com</a>
+                                        <a href={`mailto:${mailContact}`}>{mailContact}</a>
                                     </div>
                                 </div>
                             </div>
@@ -35,16 +41,16 @@ export function Contacts() {
                                     <div className="contacts-container_beginner-screen_content_contact_row_phone_phones">
                                         <img src={phone} alt="иконка телефона" />
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">
-                                            <a href="tel:+7 (915) 627-38-29">+7 (915) 627-38-29</a>
+                                            <a href={`tel:${menagerPhone}`}>{menagerPhone}</a>
                                             <span>Менеджер</span>
                                         </div>
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">
-                                            <a href="tel:+7 (915) 627-38-29">+7 (915) 627-38-29</a>
+                                            <a href={`tel:${technologPhone}`}>{technologPhone}</a>
                                             <span>Технолог</span>
 
                                         </div>
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">
-                                            <a href="tel:+7 (915) 627-38-29">+7 (915) 627-38-29</a>
+                                            <a href={`tel:${directorPhone}`}>{directorPhone}</a>
                                             <span>Руководитель</span>
                                         </div>
                                     </div>
@@ -53,9 +59,9 @@ export function Contacts() {
                             <div className="contacts-container_beginner-screen_content_contact_row">
                                 <div className="contacts-container_beginner-screen_content_contact_row_map">
                                     <h6>Наш адрес</h6>
-                                    <span>170022 обл. Тверская, г. Тверь, ул. Новая, д. 10</span>
+                                    <span>{addressOrganization}</span>
                                     <div className="contacts-container_beginner-screen_content_contact_row_map_image">
-                                        <iframe title="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor" width="100%" height="400" frameBorder="0"></iframe>
+                                        <iframe title="map" src={hrefOnMapAddress} width="100%" height="400"></iframe>
                                     </div>
                                 </div>
                             </div>

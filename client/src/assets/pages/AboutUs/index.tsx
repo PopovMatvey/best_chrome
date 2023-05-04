@@ -6,10 +6,12 @@ import sertFirst from "./images/sert1.svg";
 import { SlideMenu } from "../../components/SlideMenu";
 import { ImageSlider } from "../../components/ImageSlider";
 import { YouTubeVideo } from "../../components/YouTubeVideo";
-import { arrayImagePartners } from "../../data/arrayIImagePartners";
+import { useRequestArray } from "../../hook/useRequestArray";
+import { urlPartnersApi } from "../../data/apiUrls";
 
 // О нас
 export function AboutUs() {
+    const arrayImagePartners = useRequestArray(urlPartnersApi).requestArray;
 
     return (
         <>

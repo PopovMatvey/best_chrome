@@ -2,12 +2,15 @@ import React from "react";
 import "./css/style.css";
 import { SlideMenu } from "../../components/SlideMenu";
 import { ImageSlider } from "../../components/ImageSlider";
-import { arrayImagePortfolio } from "../../data/arrayImagePortfolio";
 import { YouTudeVideoSlider } from "../../components/YouTubeVideoSlider";
-import { arrayYouTubeVideos } from "../../data/arrauYouTubeVidoSlider";
+// import { arrayYouTubeVideos } from "../../data/arrauYouTubeVidoSlider";
+import { useRequestArray } from "../../hook/useRequestArray";
+import { urlPortfolioImagesApi, urlPortfolioVideosApi } from "../../data/apiUrls";
 
 // Наши работы
 export function OurWorks() {
+    const arrayImagePortfolio = useRequestArray(urlPortfolioImagesApi).requestArray;
+    const arrayYouTubeVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
 
     return (
         <>

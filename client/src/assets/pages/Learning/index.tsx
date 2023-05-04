@@ -5,10 +5,12 @@ import sertificate from "./images/sertificates.svg";
 import time from "./images/time.svg";
 import hends from "./images/hends.svg";
 import { ImageSlider } from "../../components/ImageSlider";
-import { arrayStudents } from "../../data/arrayImageStudents";
+import { useRequestArray } from "../../hook/useRequestArray";
+import { urlStudentsApi } from "../../data/apiUrls";
 
 // Обучение
 export function Learning() {
+    const arrayStudents = useRequestArray(urlStudentsApi).requestArray;
 
     return (
         <>
