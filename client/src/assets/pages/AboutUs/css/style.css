@@ -1,4 +1,11 @@
 /* О нас */
+.title_h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .about-us-container_beginner-screen_content {
     width: 70%;
 }
@@ -36,6 +43,36 @@
         height: auto;
         margin: 10px 0px;
     }
+}
+
+.about-us-container_information__block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us-container_information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 10px 50px;
+}
+
+.about-us-container_information h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-us-container_information span{
+    display: block;
+    text-align: justify;
+    padding: 10px;
+}
+
+.about-us-container_information b{
+    text-transform: uppercase;
 }
 
 /* Видео о нас */
