@@ -18,6 +18,8 @@ export function AboutUs() {
         "./images/Serteficate/sert1.svg",
     ];
 
+    console.log(arrayImagePartners);
+
     return (
         <>
             <div className="about-us-container">
