@@ -53,22 +53,22 @@ function deletePartString(array) {
 
 /*Requests*/
 //GET
-app.get(`${urlRequest}`, (req, res) => {
-    res.status(200).json(CONTACTS);
-});
-
+// Получить массив путей до изображений партнёров
 app.get('/api/slider/image/partners', (req, res) => {
     res.status(200).json(arrayPartnersSlider);
 });
 
+// Получить массив путей до изображений "Портфолио"
 app.get('/api/slider/image/protfolio', (req, res) => {
     res.status(200).json(arrayPortfolioSlider);
 });
 
+// Получить массив путей до изображений "Учеников"
 app.get('/api/slider/image/students', (req, res) => {
     res.status(200).json(arrayStudentsSlider);
 });
 
+// Получить массив путей до видео "Портфолио"
 app.get('/api/slider/video/portfolio', (req, res) => {
     res.status(200).json(arrayYouTubeVideos);
 })
