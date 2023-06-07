@@ -10,7 +10,7 @@ export function SlideMenu() {
             <div className="slide-menu-container">
                 <Link to={"/"}>О нас</Link>
                 <Link to={"/servises"}>Услуги</Link>
-                <Link to={"/https://bestchrome.store/"}>Магазин</Link>
+                <a href="https://bestchrome.store/">Магазин</a>
                 <Link to={"/learning"}>Обучение</Link>
                 <Link to={"/ourWorks"}>Наши работы</Link>
                 <Link to={"/contacts"}>Контакты</Link>
