@@ -57,7 +57,7 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <span>Все права защищены © 2023</span>
+            <span>Все права защищены. <a href="https://matveypopov.ru/">Разработчик Попов М.С.</a>  © 2023</span>
         </footer>
     );
 }
