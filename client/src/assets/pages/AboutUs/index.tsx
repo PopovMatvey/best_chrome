@@ -2,9 +2,7 @@ import React from "react";
 import "./css/style.css";
 import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
-// import sertFirst from "./images/sert1.svg";
 import { SlideMenu } from "../../components/SlideMenu";
-import { ImageSlider } from "../../components/ImageSlider";
 import { YouTubeVideo } from "../../components/YouTubeVideo";
 import { useRequestArray } from "../../hook/useRequestArray";
 import { urlPartnersApi } from "../../data/apiUrls";
@@ -32,7 +30,11 @@ export function AboutUs() {
                                 <img src={imgFirst} alt="" />
                             </div>
                             <span>
-                                BestChrome – компания, знающая своё дело более 6 лет. Технология хромирования, предлагаемая нашей компанией – химическая металлизация. Технология основана на нанесении зеркального декоративного защитного слоя металл на различные материалы ( пластик, металл, дерево, гипс, керамика, стекло, МДФ и прочие).
+                                BestChrome – компания, знающая своё дело c 2016 года.
+                                Технология хромирования, предлагаемая нашей компанией
+                                – химическая металлизация. Технология основана на нанесении
+                                зеркального декоративного защитного слоя на различные материалы
+                                ( пластик, металл, дерево, гипс, керамика, стекло, МДФ и прочие).
                             </span>
                         </div>
                         <div className="about-us-container_beginner-screen_content__row">
@@ -56,7 +58,7 @@ export function AboutUs() {
                                 Данная технология основана на нанесении покрытия <b>Без обжига!</b>  Что значительно упрощает работу мастера и сокращает время работы.
                             </span>
                             <span>
-                                Наша компания имеет свою линейку материалов от базового до финального покрытия (грунты, лаки, колоры).
+                                Наша компания имеет свою линейку материалов от базового до финишного покрытия (грунты, лаки, колоры).
                             </span>
                         </div>
                     </div>
@@ -65,7 +67,7 @@ export function AboutUs() {
                         <span>
                             Проводим обучение как очно, так и с применением дистанционных технологий.
                             Представляем услуги по приобретению наборов серебрения, материалов, оборудования. После прохождения обучения предоставляем сертификат на услуги (только для ООО и ИП).
-                            Мы рады успехам наших учеников м выполняем любой запрос клиента, ведь это свидетельство качества нашей работы.
+                            Мы рады успехам наших учеников и выполняем любой запрос клиента, ведь это свидетельство качества нашей работы.
                         </span>
                         <div className="about-us-container_beginner-screen_content__row_image-block">
                             <img src={imgSecond} alt="" />
@@ -90,15 +92,6 @@ export function AboutUs() {
                         {arraySertsImage.map((element: any) => (
                             <img src={element} alt="Сертефикат" />
                         ))}
-                        {/* <img src={sertFirst} alt="Сертефикат" />
-                        <img src={sertFirst} alt="Сертефикат" />
-                        <img src={sertFirst} alt="Сертефикат" /> */}
-                    </div>
-                </div>
-                <div className="about-us-container_our-partners">
-                    <h3>Наши партнеры:</h3>
-                    <div className="about-us-container_our-partners_contaiiner">
-                        <ImageSlider items={arrayImagePartners} />
                     </div>
                 </div>
             </div>
