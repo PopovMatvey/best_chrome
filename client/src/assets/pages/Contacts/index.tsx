@@ -8,9 +8,9 @@ import mail from "./images/mail.svg";
 export function Contacts() {
     const mailContact = "bestchromshop@gmail.com";
     const menagerPhone = '+7 (915) 627-38-29';
-    const technologPhone = '+7 (915) 627-38-29';
-    const directorPhone = '+7 (915) 627-38-29';
-    const addressOrganization = '170022 обл. Тверская, г. Тверь, ул. Новая, д. 10';
+    const technologPhone = '+7 (983) 878-92-68';
+    const directorPhone = '+7 (960) 867-24-13';
+    const addressOrganization = '170022 обл. Тверская, г. Тверь, ул. Колодкина, д. 18а';
     const hrefOnMapAddress = `https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor`;
     
     return (
