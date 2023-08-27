@@ -23,7 +23,7 @@ footer h1 {
     padding: 5px 20px;
 }
 
-.footer-content_img img{
+.footer-content_img img {
     width: 200px;
 }
 
@@ -76,7 +76,7 @@ footer h1 {
     color: #fff;
 }
 
-.footer-content_communication__contacts a:active{
+.footer-content_communication__contacts a:active {
     transform: scale(1.2);
 }
 
@@ -85,4 +85,8 @@ footer span {
     display: block;
     text-align: center;
     padding-top: 5px;
+}
+
+footer span a {
+    text-decoration: transparent;
 }

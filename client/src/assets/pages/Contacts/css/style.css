@@ -1,5 +1,5 @@
 /* Контакты */
-.contacts-container_beginner-screen_content{
+.contacts-container_beginner-screen_content {
     width: 60%;
 }
 
@@ -47,10 +47,16 @@
     height: 30px;
 }
 
-.contacts-container_beginner-screen_content_contact_row_mail_block a{
+.contacts-container_beginner-screen_content_contact_row_mail_block a {
     display: block;
     padding: 10px 10px;
 }
+
+.contacts-container_beginner-screen_content_contact_row_requisites span{
+    display: block;
+    margin: 5px 0px;
+}
+
 
 /* Телефоны */
 .contacts-container_beginner-screen_content_contact_row_phone_phones {
@@ -81,16 +87,16 @@
 }
 
 /* Карта */
-.contacts-container_beginner-screen_content_contact_row_map{
+.contacts-container_beginner-screen_content_contact_row_map {
     width: 100%;
 }
 
-.contacts-container_beginner-screen_content_contact_row_map span{
+.contacts-container_beginner-screen_content_contact_row_map span {
     display: block;
     text-align: center;
 }
 
-.contacts-container_beginner-screen_content_contact_row_map_image{
+.contacts-container_beginner-screen_content_contact_row_map_image {
     display: flex;
     justify-content: center;
     padding: 10px 0px;
