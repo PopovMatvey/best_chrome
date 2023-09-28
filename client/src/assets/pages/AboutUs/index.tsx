@@ -9,14 +9,12 @@ import { urlPartnersApi } from "../../data/apiUrls";
 
 // О нас
 export function AboutUs() {
-    const arrayImagePartners = useRequestArray(urlPartnersApi).requestArray;
+    // const arrayImagePartners = useRequestArray(urlPartnersApi).requestArray;
     const arraySertsImage = [
         "./images/Serteficate/sert_company.png",
         "./images/Serteficate/sert1.svg",
         "./images/Serteficate/sert1.svg",
     ];
-
-    console.log(arrayImagePartners);
 
     return (
         <>
