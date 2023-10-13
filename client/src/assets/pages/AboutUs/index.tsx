@@ -2,18 +2,25 @@ import React from "react";
 import "./css/style.css";
 import imgFirst from "./images/img1.svg";
 import imgSecond from "./images/img2.svg";
+import imgThird from './images/znachok-avto-iz-chroma.jpg';
+import imgFouth from './images/model-of-car-wheel.jpg';
 import { SlideMenu } from "../../components/SlideMenu";
 import { YouTubeVideo } from "../../components/YouTubeVideo";
-import { useRequestArray } from "../../hook/useRequestArray";
-import { urlPartnersApi } from "../../data/apiUrls";
+// import { useRequestArray } from "../../hook/useRequestArray";
+// import { urlPartnersApi } from "../../data/apiUrls";
 
 // О нас
 export function AboutUs() {
     // const arrayImagePartners = useRequestArray(urlPartnersApi).requestArray;
     const arraySertsImage = [
-        "./images/Serteficate/sert_company.png",
-        "./images/Serteficate/sert1.svg",
-        "./images/Serteficate/sert1.svg",
+        {
+            imageHref: './images/Serteficate/sert_company.png',
+            docHref: './doc/SvidUchetUL_69984220aa274e3cb5f326d991cd1ccb.pdf',
+        },
+        {
+            imageHref: './images/Serteficate/sert-sootv.png',
+            docHref: './doc/Сертификат РУ.17101.pdf',
+        }
     ];
 
     return (
@@ -25,7 +32,7 @@ export function AboutUs() {
                         <h1>О нас</h1>
                         <div className="about-us-container_beginner-screen_content__row">
                             <div className="about-us-container_beginner-screen_content__row_image-block">
-                                <img src={imgFirst} alt="" />
+                                <img src={imgFirst} alt="Изображение начального экрана" />
                             </div>
                             <span>
                                 BestChrome – компания, знающая своё дело c 2016 года.
@@ -40,7 +47,7 @@ export function AboutUs() {
                                 Зеркальному покрытию можно придать различную цветовую гамму, а также выполнить его под хром, золото, медь, бронзу, латунь. Данное покрытие защищает от коррозии и ультрафиолетовых лучей.
                             </span>
                             <div className="about-us-container_beginner-screen_content__row_image-block">
-                                <img src={imgSecond} alt="" />
+                                <img src={imgSecond} alt="Изображение начального экрана" />
                             </div>
                         </div>
 
@@ -49,7 +56,7 @@ export function AboutUs() {
                 <div className="about-us-container_information__block">
                     <div className="about-us-container_information">
                         <div className="about-us-container_beginner-screen_content__row_image-block">
-                            <img src={imgSecond} alt="" />
+                            <img src={imgThird} alt="Изображение начального экрана" />
                         </div>
                         <div className="about-us-container_information__text">
                             <span>
@@ -68,11 +75,10 @@ export function AboutUs() {
                             Мы рады успехам наших учеников и выполняем любой запрос клиента, ведь это свидетельство качества нашей работы.
                         </span>
                         <div className="about-us-container_beginner-screen_content__row_image-block">
-                            <img src={imgSecond} alt="" />
+                            <img src={imgFouth} alt="Изображение Обучения" />
                         </div>
                     </div>
                 </div>
-
                 <div className="abuot-us-container_video">
                     <h3>Видео о нас</h3>
                     <div className="abuot-us-container_video_component">
@@ -87,8 +93,10 @@ export function AboutUs() {
                         подвергнуты целой серии независимых исследований.
                     </span>
                     <div className="about-us-container_serteficates_images">
-                        {arraySertsImage.map((element: any) => (
-                            <img src={element} alt="Сертефикат" />
+                        {arraySertsImage.map((element: any, index: number) => (
+                            <a href={element.docHref}>
+                                <img src={element.imageHref} alt="Сертефикат" key={index} />
+                            </a>
                         ))}
                     </div>
                 </div>

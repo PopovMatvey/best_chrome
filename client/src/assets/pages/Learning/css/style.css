@@ -9,7 +9,7 @@
     text-align: justify;
 }
 
-.learning-container_beginner-screen_text span{
+.learning-container_beginner-screen_text span {
     display: block;
     margin: 10px;
 }
@@ -66,6 +66,124 @@
     margin-top: 10px;
 }
 
+/* Бизнес под ключ */
+.learning-container_busnes-on-key {
+    padding: 35px;
+
+}
+
+.learning-container_busnes-on-key h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.learning-container_busnes-on-key__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+}
+
+@media screen and (max-width:991px) {
+    .learning-container_busnes-on-key__row {
+        justify-content: center;
+    }    
+    
+    .learning-container_busnes-on-key__row:nth-child(3n){
+        flex-direction: column-reverse;
+    }
+}
+
+.learning-container_busnes-on-key__row span {
+    display: block;
+    width: 60%;
+    text-align: justify;
+}
+
+@media screen and (max-width:991px) {
+    .learning-container_busnes-on-key__row span{
+        width: 80%;
+        padding: 30px 0px;
+    }    
+}
+
+.learning-container_busnes-on-key__row img {
+    width: 20%;
+}
+
+@media screen and (max-width:991px) {
+    .learning-container_busnes-on-key__row img {
+        width: 40%;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .learning-container_busnes-on-key__row img {
+        width: 80%;
+    }    
+}
+
+/* Нащи предложения */
+.our-offer-container{
+    padding: 35px;
+}
+
+.our-offer-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.our-offer-container-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.our-offer-container-offers_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
+
+@media screen and (max-width:991px) {
+    .our-offer-container-offers_item {
+        width:80%;
+    }    
+}
+
+.our-offer-container-offers_item span{
+    display: block;
+    width: 95%;
+    text-align: justify;
+}
+
+.our-offer-container-offers_item img{
+    width:10%;
+    padding: 10px;
+}
+
+@media screen and (max-width:991px) {
+    .our-offer-container-offers_item img{
+        width:15%;
+    }    
+}
+
+@media screen and (max-width:500px) {
+    .our-offer-container-offers_item img{
+        width:30%;
+    }    
+}
+
 /* Наши ученики */
 .learning-container_students {
     padding: 15px;
@@ -78,12 +196,12 @@
     padding: 30px;
 }
 
-.learning-container_students span{
+.learning-container_students span {
     display: block;
     text-align: center;
 }
 
-.learning-container_students_contaiiner{
+.learning-container_students_contaiiner {
     display: flex;
     justify-content: center;
     padding: 20px;
