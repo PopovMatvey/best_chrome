@@ -6,13 +6,15 @@ import youtube from "./images/youtube.svg";
 import whatsup from "./images/whatsup.svg";
 import phone from "./images/phone.svg";
 import tracker from "./images/tracker.svg";
+import vk from "./images/vk.svg";
 
 // Подвал
 export function Footer() {
     const hrefOnMail = "mailto:bestchromshop@gmail.com";                                    // Ссылка на почту bestchromshop@gmail.com 
     const hrefOnYoutybe = "https://www.youtube.com/channel/UCiUKKuWHYX4jQWrI543D9gw";       // Ссылка на YouTube
+    const hrefOnVK = 'https://vk.com/bestchrome'                                            // Ссылка на ВК
     const arrayPhones = [                                                                   // Номера телефонов
-        "+7 (983) 878-92-68",
+        "+7 (938) 878-92-68",
         "+7 (960) 867-24-13",
     ];
     // Ссылка на Whats up        
@@ -32,6 +34,7 @@ export function Footer() {
                     <a href={hrefOnMail} target="_blank "><img src={mail} alt="Иконка почты" /></a>
                     <a href={hrefOnYoutybe} target="_blank "><img src={youtube} alt="Иконка почты" /></a>
                     <a href={hrefOnWhatsUp} target="_blank "><img src={whatsup} alt="Иконка почты" /></a>
+                    <a href={hrefOnVK} target="_blank "><img src={vk} alt="Иконка vk" /></a>
                 </div>
                 <div className="footer-content_communication">
                     <div className="footer-content_communication__row">
@@ -63,7 +66,7 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <span>Все права защищены. <a href="https://matveypopov.ru/">Разработчик Попов М.С.</a>  © 2023</span>
+            <span>Все права защищены. <a href="https://matveypopov.ru/">Разработчик Попов М.С. https://matveypopov.ru/</a>  © 2023</span>
         </footer>
     );
 }

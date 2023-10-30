@@ -7,8 +7,8 @@ import mail from "./images/mail.svg";
 // Контакты
 export function Contacts() {
     const mailContact = "bestchromshop@gmail.com";
-    const menagerPhone = '+7 (915) 627-38-29';
-    const technologPhone = '+7 (983) 878-92-68';
+    const menagerPhone = '+7 (920) 174-93-81';
+    const technologPhone = '+7 (938) 878-92-68';
     const directorPhone = '+7 (960) 867-24-13';
     const addressOrganization = '170022 обл. Тверская, г. Тверь, ул. Колодкина, 18А';
     const hrefOnMapAddress = `https://yandex.ru/map-widget/v1/?um=constructor%3A36a8ad64addb63f5b777bbffe6788c4f481599dfbb8beb9c4fa6fc9779c277c4&amp;source=constructor`;
@@ -35,7 +35,7 @@ export function Contacts() {
                                     </div>
                                 </div>
                                 <div className="contacts-container_beginner-screen_content_contact_row_requisites">
-                                    <h6>Наша реквизиты</h6>
+                                    <h6>Наши реквизиты</h6>
                                     <span>ИНН:  69500267170</span>
                                     <span>ОГРН: 1236900001447</span>
                                 </div>
@@ -47,7 +47,7 @@ export function Contacts() {
                                         <img src={phone} alt="иконка телефона" />
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">
                                             <a href={`tel:${menagerPhone}`}>{menagerPhone}</a>
-                                            <span>Менеджер</span>
+                                            <span>Мастер по хромированию</span>
                                         </div>
                                         <div className="contacts-container_beginner-screen_content_contact_row_phone_phones_item">
                                             <a href={`tel:${technologPhone}`}>{technologPhone}</a>

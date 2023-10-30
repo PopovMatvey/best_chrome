@@ -47,7 +47,6 @@ export function Learning() {
                             </span>
                             <span>
                                 PS. Обучение может проходить как в нашем тех. центре, так и дистанционно, это всё обсуждается по телефону или WhatsApp.
-                                При необходимости рассматривается обучение на рабочем месте. Обучение возможно в рассрочку.
                             </span>
                             <span>
                                 Работаем по всей России!
@@ -147,12 +146,12 @@ export function Learning() {
                         </div>
                     </div>
                 </div>
-                <div className="learning-container_students">
+                {/* <div className="learning-container_students">
                     <h3>Наши ученики:</h3>
                     <div className="learning-container_students_contaiiner">
                         <ImageSlider items={arrayStudents} />
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

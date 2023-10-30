@@ -2,15 +2,17 @@ import React from "react";
 import "./css/style.css";
 import { SlideMenu } from "../../components/SlideMenu";
 import { ImageSlider } from "../../components/ImageSlider";
-import { YouTudeVideoSlider } from "../../components/YouTubeVideoSlider";
+// import { YouTudeVideoSlider } from "../../components/YouTubeVideoSlider";
 // import { arrayYouTubeVideos } from "../../data/arrauYouTubeVidoSlider";
 import { useRequestArray } from "../../hook/useRequestArray";
 import { urlPortfolioImagesApi, urlPortfolioVideosApi } from "../../data/apiUrls";
+import { VideoSlider } from "../../components/VideoSlider";
 
 // Наши работы
 export function OurWorks() {
     const arrayImagePortfolio = useRequestArray(urlPortfolioImagesApi).requestArray;
-    const arrayYouTubeVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
+    // const arrayYouTubeVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
+    const arrayVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
 
     return (
         <>
@@ -44,7 +46,9 @@ export function OurWorks() {
                         <ImageSlider items={arrayImagePortfolio} />
                     </div>
                     <div className="out-works-container_beginner-screen_portfolio_contaiiner_videos">
-                        <YouTudeVideoSlider items={arrayYouTubeVideos} />
+                        {/* <YouTudeVideoSlider items={arrayYouTubeVideos} /> */}
+                        {/* <VideoSlider items={['./video/Darci_On_My_Own_Lyrics.mp4','./video/Darci_On_My_Own_Lyrics.mp4']}/> */}
+                        <VideoSlider item={arrayVideos} />
                     </div>
                 </div>
             </div>

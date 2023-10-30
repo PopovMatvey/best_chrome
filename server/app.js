@@ -14,12 +14,13 @@ const urlRequest = '/api/contacts';         // url request api
 const arrayPartnersSlider = getFiles('./static/images/Slider/Parnters/');
 const arrayPortfolioSlider = getFiles('./static/images/Slider/Portfolio/');
 const arrayStudentsSlider = getFiles('./static/images/Slider/Students/');
+const arrayVideos = getFiles('./videos/Slider/Portfolio/')
 const arrayYouTubeVideos = [
     "QqgBzPfBkj0",
     "QqgBzPfBkj1",
     "QqgBzPfBkj0",
     "QqgBzPfBkj0",
-];
+]; 
 
 
 /*Methods*/
@@ -68,9 +69,14 @@ app.get('/api/slider/image/students', (req, res) => {
     res.status(200).json(arrayStudentsSlider);
 });
 
-// Получить массив путей до видео "Портфолио"
-app.get('/api/slider/video/portfolio', (req, res) => {
+// Получить массив путей до ютуб-видео "Портфолио"
+app.get('/api/slider/video-youtube/portfolio', (req, res) => {
     res.status(200).json(arrayYouTubeVideos);
+})
+
+// Получить массив путей до ютуб-видео "Портфолио"
+app.get('', (req, res) => {
+    res.status(200).json(arrayVideos);
 })
 
 //POST "CREATE"
