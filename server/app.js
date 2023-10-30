@@ -14,7 +14,7 @@ const urlRequest = '/api/contacts';         // url request api
 const arrayPartnersSlider = getFiles('./static/images/Slider/Parnters/');
 const arrayPortfolioSlider = getFiles('./static/images/Slider/Portfolio/');
 const arrayStudentsSlider = getFiles('./static/images/Slider/Students/');
-const arrayVideos = getFiles('./videos/Slider/Portfolio/')
+const arrayVideos = getFiles('./static/videos/Slider/Portfolio/')
 const arrayYouTubeVideos = [
     "QqgBzPfBkj0",
     "QqgBzPfBkj1",
