@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.96fde156.css",
-    "main.js": "/static/js/main.d4df5b00.js",
+    "main.js": "/static/js/main.c2d6832e.js",
     "static/js/787.c6b640df.chunk.js": "/static/js/787.c6b640df.chunk.js",
     "static/media/model-of-car-wheel.jpg": "/static/media/model-of-car-wheel.8052ddab44491401a9d0.jpg",
     "static/media/img2.svg": "/static/media/img2.c4deabb022154aac51dba8ea131acf75.svg",
@@ -32,11 +32,11 @@
     "static/media/youtube.svg": "/static/media/youtube.75f0f643d6e310e83df7ebc101c9a70b.svg",
     "index.html": "/index.html",
     "main.96fde156.css.map": "/static/css/main.96fde156.css.map",
-    "main.d4df5b00.js.map": "/static/js/main.d4df5b00.js.map",
+    "main.c2d6832e.js.map": "/static/js/main.c2d6832e.js.map",
     "787.c6b640df.chunk.js.map": "/static/js/787.c6b640df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.96fde156.css",
-    "static/js/main.d4df5b00.js"
+    "static/js/main.c2d6832e.js"
   ]
 }

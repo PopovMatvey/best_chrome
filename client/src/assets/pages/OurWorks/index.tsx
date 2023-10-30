@@ -13,6 +13,7 @@ export function OurWorks() {
     const arrayImagePortfolio = useRequestArray(urlPortfolioImagesApi).requestArray;
     // const arrayYouTubeVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
     const arrayVideos = useRequestArray(urlPortfolioVideosApi).requestArray;
+    console.log(arrayVideos)    
 
     return (
         <>
@@ -47,8 +48,8 @@ export function OurWorks() {
                     </div>
                     <div className="out-works-container_beginner-screen_portfolio_contaiiner_videos">
                         {/* <YouTudeVideoSlider items={arrayYouTubeVideos} /> */}
-                        {/* <VideoSlider items={['./video/Darci_On_My_Own_Lyrics.mp4','./video/Darci_On_My_Own_Lyrics.mp4']}/> */}
-                        <VideoSlider item={arrayVideos} />
+                        <VideoSlider items={['./video/Darci_On_My_Own_Lyrics.mp4','./video/Darci_On_My_Own_Lyrics.mp4']}/>
+                        {/* <VideoSlider item={arrayVideos} /> */}
                     </div>
                 </div>
             </div>
