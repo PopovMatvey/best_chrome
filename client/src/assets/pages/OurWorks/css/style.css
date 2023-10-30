@@ -1,0 +1,53 @@
+/* Наши работы */
+.out-works-container_beginner-screen_container{
+    width: 80%;
+}
+
+.out-works-container_beginner-screen_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 0px 30px;
+}
+
+.out-works-container_beginner-screen_text span{
+    display: block;
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+.out-works-container_beginner-screen_text span::before{
+    content: "\a0\a0";
+}
+
+/* Портфолио */
+.out-works-container_beginner-screen_portfolio{
+    width: 100%;
+    padding: 20px;
+}
+
+.out-works-container_beginner-screen_portfolio h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.out-works-container_beginner-screen_portfolio span{
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.out-works-container_beginner-screen_portfolio_contaiiner{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.out-works-container_beginner-screen_portfolio_contaiiner_videos{
+    display: flex;
+    justify-content: center;
+    padding: 20px;    
+}

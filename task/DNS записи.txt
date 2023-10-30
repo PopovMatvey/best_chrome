@@ -1,0 +1,54 @@
+домен store
+beget
+mx1.beget.com
+mx2.beget.com
+45.130.41.34
+
+tilda
+ns1.tildadns.com
+ns2.tildadns.com
+185.215.4.28
+
+
+
+vps chrome
+45.12.75.217
+TD&az2bLk2wX
+
+vps личный
+62.113.107.56
+p9D5bvY!vPD)
+
+
+домен ru
+vps
+45.12.75.217
+
+beget
+45.130.41.34
+
+
+пример Location для линковки домена
+ location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                #try_files $uri $uri/ =404;
+                proxy_pass http://localhost:2000;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+ }
+
+Актуальные товары с ценами
+
+На Вашем сайте должны быть размещены товары, которые Вы действительно намерены продавать, а также указаны настоящие цены на них. Тестовые карточки товаров должны быть удалены.
+
+Полные описание товаров и другая информация
+
+Проверьте, что в описаниях к товарам и в других разделах Вашего сайта указана реальная информация. Тестовые формулировки и страницы должны быть удалены или заменены на реальные. Все внутренние ссылки должны быть активными.
+
+Информация о доставке и возврате товаров
+
+Добавьте на сайт информацию о регионах и способах доставки, а также подробную информацию об условиях и сроках возврата.
