@@ -75,7 +75,7 @@ app.get('/api/slider/video-youtube/portfolio', (req, res) => {
 })
 
 // Получить массив путей до ютуб-видео "Портфолио"
-app.get('', (req, res) => {
+app.get('/api/slider/video/portfolio', (req, res) => {
     res.status(200).json(arrayVideos);
 })
 
